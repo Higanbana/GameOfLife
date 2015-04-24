@@ -7,7 +7,7 @@ class GameTest extends PHPUnit_Framework_TestCase
 
         $state = $game->getState();
 
-        $this->assertEquals($state, [[]]);
+        $this->assertEquals($state, array(array()));
     }
 
     public function testGameIsInitialization_WithInitialState()
