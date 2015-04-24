@@ -1,3 +1,9 @@
+dependencies:
+  post:
+    - wget https://phar.phpunit.de/phpunit.phar
+    - chmod +x phpunit.phar
+    - mv phpunit.phar /usr/local/bin/phpunit
+
 test:
   override:
     - phpunit --bootstrap bootstrap.php GameTest.php
