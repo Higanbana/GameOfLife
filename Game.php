@@ -6,7 +6,7 @@ class Game
     private $c;
     private $r; 
 
-    public function __construct($initialState = [[]])
+    public function __construct($initialState = array(array()))
     {
         $this->state = $initialState;
         $this->r = count($initialState);
@@ -50,7 +50,6 @@ class Game
 
         for($j=-1; $j<=1; $j++){
             for($i=-1; $i<=1; $i++){
-
                 try{
                     if($this->state[$y+$j][$x+$i] == 1){
                         {
